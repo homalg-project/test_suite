@@ -4,11 +4,20 @@
 
 cd $PKG_PATH
 
-sh -c $BIN_PATH/MapleForHomalg.g
-. $BIN_PATH/ExamplesForHomalg.g
-. $BIN_PATH/GradedModules.g
-. $BIN_PATH/Sheaves.g
-. $BIN_PATH/D-Modules.g
-. $BIN_PATH/RingsForHomalg.g
+L="MapleForHomalg.g ExamplesForHomalg.g GradedModules.g Sheaves.g D-Modules.g RingsForHomalg.g"
+
+for i in $L; do
+  {
+  echo -e "\n"
+  echo -e "\033[1;33;40m"
+  echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
+  echo -e "\033[0m"
+  echo $i
+  echo -e "\033[1;33;40m"
+  echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
+  echo -e "\033[0m"
+  } >&2
+  sh -c "$BIN_PATH/${i}"
+done
 
 echo -e "\a\a\a"
