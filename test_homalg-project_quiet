@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. $(dirname $0)/init_homalg-project_test_suite
+
+$BIN_PATH/test_packages_of_homalg-project | grep "from paragraph"
+$BIN_PATH/main_examples_of_homalg-project | grep "Error"

@@ -1,0 +1,25 @@
+#!/bin/bash
+
+. $(dirname $0)/init_homalg-project_test_suite
+
+cd $PKG_PATH
+
+L="RingsForHomalg MatricesForHomalg HomalgToCAS VirtualCAS IO_ForHomalg Gauss GaussForHomalg SCO alexander Conley SimplicialObjects Orbifolds LocalizeRingForHomalg GradedRingForHomalg k-Points AbelianSystems homalg Modules SystemTheory Sheaves D-Modules ExamplesForHomalg GradedModules"
+
+for i in $L; do
+  {
+  echo -e "\n"
+  echo -e "\033[1;33;40m"
+  echo "========================="
+  echo -e "\033[0m"
+  echo $i
+  echo -e "\033[1;33;40m"
+  echo "========================="
+  echo -e "\033[0m"
+  } >&2
+  cd $i
+  make test < /dev/null
+  cd ..
+done
+
+echo -e "\n"

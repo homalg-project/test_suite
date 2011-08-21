@@ -1,0 +1,21 @@
+#!/bin/bash
+
+. $(dirname $0)/init_homalg-project_test_suite
+
+if cd $PKG_PATH; then
+    for p in */.git; do
+	d=${p///.git}
+	cd "$d"
+	if [ "$d" = "Arrangements" ] ||
+	    [ "$d" = "LessGenerators" ] ||
+	    [ "$d" = "SCSCP_ForHomalg" ] ||
+	    [ "$d" = "Yoneda" ] ||
+	    [ "$d" = "jets" ]; then
+	    true;
+	elif { git status 2>&1 | grep "modified:" >/dev/null;}; then
+	    echo "---"
+	    echo "$d not yet committed"
+	fi
+	cd ..
+    done
+fi

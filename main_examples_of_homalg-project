@@ -1,0 +1,14 @@
+#!/bin/bash
+
+. $(dirname $0)/init_homalg-project_test_suite
+
+cd $PKG_PATH
+
+sh -c $BIN_PATH/MapleForHomalg.g
+. $BIN_PATH/ExamplesForHomalg.g
+. $BIN_PATH/GradedModules.g
+. $BIN_PATH/Sheaves.g
+. $BIN_PATH/D-Modules.g
+. $BIN_PATH/RingsForHomalg.g
+
+echo -e "\a\a\a"
