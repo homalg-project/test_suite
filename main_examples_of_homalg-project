@@ -4,7 +4,7 @@
 
 cd $PKG_PATH
 
-L="MapleForHomalg.g ExamplesForHomalg.g GradedModules.g Sheaves.g D-Modules.g RingsForHomalg.g"
+L="MapleForHomalg.g D-Modules.g ExamplesForHomalg.g GradedModules.g Sheaves.g RingsForHomalg.g"
 
 for i in $L; do
   {
