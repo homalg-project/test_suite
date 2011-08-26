@@ -55,6 +55,7 @@ ProjectiveOfNonconstantRank_Rank0.g \
 ReflexiveNonProjectiveIdeal.g \
 ShortenResolution.g \
 WhySpectral.g \
+HilbertPolynomial.g \
 ; do
     echo -e "\n"
     echo "========================="
@@ -121,6 +122,7 @@ Eliminate.g \
 Purity_OreModules.g \
 A3_Purity_OreModules.g \
 Auslander-Buchsbaum.g \
+HilbertPolynomial.g \
 ; do
     echo -e "\n"
     echo "========================="

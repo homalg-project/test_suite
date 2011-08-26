@@ -9,6 +9,7 @@ cd GradedModules/examples/
 
 ## Singular
 for i in \
+HilbertPolynomial.g \
 Purity.g \
 FilteredByPurity.g \
 Triangle.g \
@@ -77,6 +78,7 @@ cd ../
 cd maple
 
 for i in \
+HilbertPolynomial.g \
 Purity.g \
 FilteredByPurity.g \
 P1.g \
