@@ -26,7 +26,8 @@ done
 cd MAGMA
 
 for i in \
-Triangle.g \
+TwistedCubic.g \
+Curve\:g\=10_and_g\^2_6-Sextic.g \
 ; do
     echo -e "\n"
     echo "========================="
@@ -41,7 +42,8 @@ cd ../
 cd Macaulay2
 
 for i in \
-Curve\:g\=10_and_g\^2_6-Sextic.g Triangle.g \
+Curve\:g\=10_and_g\^2_6-Sextic.g \
+Triangle.g \
 ; do
     echo -e "\n"
     echo "========================="

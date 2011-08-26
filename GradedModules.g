@@ -33,6 +33,7 @@ done
 cd MAGMA
 
 for i in \
+HilbertPolynomial.g \
 Purity.g \
 FilteredByPurity.g \
 Triangle.g \
