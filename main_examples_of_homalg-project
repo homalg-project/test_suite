@@ -9,11 +9,11 @@ L="MapleForHomalg.g D-Modules.g ExamplesForHomalg.g GradedModules.g Sheaves.g Ri
 for i in $L; do
   {
   echo -e "\n"
-  echo -e "\033[1;33;40m"
+  echo -e "\033[1;33;41m"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
   echo -e "\033[0m"
   echo $i
-  echo -e "\033[1;33;40m"
+  echo -e "\033[1;33;41m"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
   echo -e "\033[0m"
   } >&2
