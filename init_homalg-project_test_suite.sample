@@ -1,2 +1,2 @@
 export PKG_PATH=~/software/pkg
-export BIN_PATH=~/software/pkg/bin
+export BIN_PATH=~/software/pkg/test_suite
