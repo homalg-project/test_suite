@@ -62,7 +62,7 @@ Curve\:g\=5_and_g\^1_3-Quintic.g \
 ; do
     echo -e "\n"
     echo "========================="
-    echo Macaulay2/$i "(Sheaves)"
+    echo Maple/$i "(Sheaves)"
     echo "========================="
     gapL $i < /dev/null
 done
