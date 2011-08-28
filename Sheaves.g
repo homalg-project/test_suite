@@ -26,8 +26,8 @@ done
 cd MAGMA
 
 for i in \
-TwistedCubic.g \
 Curve\:g\=10_and_g\^2_6-Sextic.g \
+TwistedCubic.g \
 ; do
     echo -e "\n"
     echo "========================="
