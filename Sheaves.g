@@ -59,6 +59,9 @@ cd maple
 
 for i in \
 Curve\:g\=5_and_g\^1_3-Quintic.g \
+TwistedCubic.g \
+d-uple_Embedding_of_P1.g \
+RationalQuartic.g \
 ; do
     echo -e "\n"
     echo "========================="
