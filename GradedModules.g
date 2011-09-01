@@ -42,6 +42,7 @@ P1.g \
 Schenck-3.2.g \
 Schenck-8.3.g \
 Schenck-8.3.3.g \
+NonCohenMacaulayMonomialIdeal.g \
 ; do
     echo -e "\n"
     echo "========================="
@@ -64,6 +65,7 @@ P1.g \
 Schenck-3.2.g \
 Schenck-8.3.g \
 Schenck-8.3.3.g \
+NonCohenMacaulayMonomialIdeal.g \
 VectorBundleOnP1_Example5.1.g \
 ; do
     echo -e "\n"
@@ -86,6 +88,7 @@ P1.g \
 Schenck-3.2.g \
 Schenck-8.3.g \
 Schenck-8.3.3.g \
+NonCohenMacaulayMonomialIdeal.g \
 VectorBundleOnP1_Example5.1.g \
 ; do
     echo -e "\n"
