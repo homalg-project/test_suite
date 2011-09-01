@@ -18,7 +18,7 @@ for i in $L; do
   echo -e "\033[1;33;40m"
   echo "========================="
   echo -e "\033[0m"
-  } >&3
+  } >&2
   cd $i
   make test < /dev/null
   cd ..
