@@ -33,6 +33,7 @@ TwistedCubic.g \
     echo "========================="
     echo MAGMA/$i "(Sheaves)"
     echo "========================="
+    update_from_directory_one_level_up
     gapL $i < /dev/null
 done
 
@@ -49,6 +50,7 @@ Triangle.g \
     echo "========================="
     echo Macaulay2/$i "(Sheaves)"
     echo "========================="
+    update_from_directory_one_level_up
     gapL $i < /dev/null
 done
 
@@ -67,6 +69,7 @@ RationalQuartic.g \
     echo "========================="
     echo Maple/$i "(Sheaves)"
     echo "========================="
+    update_from_directory_one_level_up
     gapL $i < /dev/null
 done
 

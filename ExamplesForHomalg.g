@@ -80,6 +80,7 @@ Auslander-Buchsbaum.g \
     echo "========================="
     echo MAGMA/$i "(ExamplesForHomalg)"
     echo "========================="
+    update_from_directory_one_level_up
     gapL $i < /dev/null
 done
 
@@ -104,6 +105,7 @@ Eliminate.g \
     echo "========================="
     echo Macaulay2/$i "(ExamplesForHomalg)"
     echo "========================="
+    update_from_directory_one_level_up
     gapL $i < /dev/null
 done
 
@@ -128,6 +130,7 @@ HilbertPolynomial.g \
     echo "========================="
     echo maple/$i "(ExamplesForHomalg)"
     echo "========================="
+    update_from_directory_one_level_up
     gapL $i < /dev/null
 done
 

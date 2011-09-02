@@ -48,6 +48,7 @@ NonCohenMacaulayMonomialIdeal.g \
     echo "========================="
     echo MAGMA/$i "(GradedModules)"
     echo "========================="
+    update_from_directory_one_level_up
     gapL $i < /dev/null
 done
 
@@ -72,6 +73,7 @@ VectorBundleOnP1_Example5.1.g \
     echo "========================="
     echo Macaulay2/$i "(GradedModules)"
     echo "========================="
+    update_from_directory_one_level_up
     gapL $i < /dev/null
 done
 
@@ -95,6 +97,7 @@ VectorBundleOnP1_Example5.1.g \
     echo "========================="
     echo maple/$i "(GradedModules)"
     echo "========================="
+    update_from_directory_one_level_up
     gapL $i < /dev/null
 done
 
