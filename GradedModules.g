@@ -14,6 +14,7 @@ Purity.g \
 FilteredByPurity.g \
 Triangle.g \
 Complexes.g \
+GlobalSections.g \
 P1.g \
 Schenck-3.2.g \
 Schenck-8.3.g \
@@ -38,6 +39,7 @@ Purity.g \
 FilteredByPurity.g \
 Triangle.g \
 Complexes.g \
+GlobalSections.g \
 P1.g \
 Schenck-3.2.g \
 Schenck-8.3.g \
@@ -62,6 +64,7 @@ Purity.g \
 FilteredByPurity.g \
 Triangle.g \
 Complexes.g \
+GlobalSections.g \
 P1.g \
 Schenck-3.2.g \
 Schenck-8.3.g \
