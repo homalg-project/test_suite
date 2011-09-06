@@ -14,6 +14,7 @@ TwistedCubic.g \
 d-uple_Embedding_of_P1.g \
 RationalQuartic.g \
 Triangle.g \
+FilteredByPurity.g \
 ; do
     echo -e "\n"
     echo "========================="
@@ -28,6 +29,7 @@ cd MAGMA
 for i in \
 Curve\:g\=10_and_g\^2_6-Sextic.g \
 TwistedCubic.g \
+FilteredByPurity.g \
 ; do
     echo -e "\n"
     echo "========================="
@@ -45,6 +47,7 @@ cd Macaulay2
 for i in \
 Curve\:g\=10_and_g\^2_6-Sextic.g \
 Triangle.g \
+FilteredByPurity.g \
 ; do
     echo -e "\n"
     echo "========================="
@@ -64,6 +67,7 @@ Curve\:g\=5_and_g\^1_3-Quintic.g \
 TwistedCubic.g \
 d-uple_Embedding_of_P1.g \
 RationalQuartic.g \
+FilteredByPurity.g \
 ; do
     echo -e "\n"
     echo "========================="
