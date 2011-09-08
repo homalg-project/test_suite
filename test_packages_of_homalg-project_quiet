@@ -1,0 +1,5 @@
+#!/bin/bash
+
+. $(dirname $0)/init_homalg-project_test_suite
+
+$BIN_PATH/test_packages_of_homalg-project | grep "from paragraph"
