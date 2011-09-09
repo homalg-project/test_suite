@@ -4,6 +4,33 @@
 
 cd $PKG_PATH
 
+{
+    echo -e "\n"
+    echo -e "\033[1;33;40m"
+    echo "========================="
+    echo -e "\033[0m"
+    echo "LoadPackage( \"Sheaves\" );"
+    echo -e "\033[1;33;40m"
+    echo "========================="
+    echo -e "\033[0m"
+} >&2
+
+gap "${BIN_PATH}/LoadSheaves.g" < /dev/null
+
+
+{
+    echo -e "\n"
+    echo -e "\033[1;33;40m"
+    echo "========================="
+    echo -e "\033[0m"
+    echo "LoadAllPackages( );"
+    echo -e "\033[1;33;40m"
+    echo "========================="
+    echo -e "\033[0m"
+} >&2
+
+gap "${BIN_PATH}/LoadAllPackages.g" < /dev/null
+
 L="RingsForHomalg MatricesForHomalg HomalgToCAS VirtualCAS IO_ForHomalg Gauss GaussForHomalg SCO alexander Conley SimplicialObjects Orbifolds LocalizeRingForHomalg GradedRingForHomalg k-Points AbelianSystems homalg Modules SystemTheory Sheaves D-Modules ExamplesForHomalg GradedModules"
 
 for i in $L; do
