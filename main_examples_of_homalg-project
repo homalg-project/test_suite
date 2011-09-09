@@ -6,8 +6,6 @@ cd $PKG_PATH
 
 L="MapleForHomalg.g D-Modules.g ExamplesForHomalg.g GradedModules.g Sheaves.g RingsForHomalg.g"
 
-exec 3>&1
-
 for i in $L; do
   {
   echo -e "\n"

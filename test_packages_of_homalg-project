@@ -6,8 +6,6 @@ cd $PKG_PATH
 
 L="RingsForHomalg MatricesForHomalg HomalgToCAS VirtualCAS IO_ForHomalg Gauss GaussForHomalg SCO alexander Conley SimplicialObjects Orbifolds LocalizeRingForHomalg GradedRingForHomalg k-Points AbelianSystems homalg Modules SystemTheory Sheaves D-Modules ExamplesForHomalg GradedModules"
 
-exec 3>&1
-
 for i in $L; do
   {
   echo -e "\n"
