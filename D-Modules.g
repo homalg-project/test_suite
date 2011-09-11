@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. $(dirname $0)/init_homalg-project_test_suite
+. $(dirname $0)/init_homalg_project_test_suite
 
 cd $PKG_PATH
 
