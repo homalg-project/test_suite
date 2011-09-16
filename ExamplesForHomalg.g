@@ -56,6 +56,7 @@ ReflexiveNonProjectiveIdeal.g \
 ShortenResolution.g \
 WhySpectral.g \
 HilbertPolynomial.g \
+Gcd_UsingCayleyDeterminant.g \
 ; do
     echo -e "\n"
     echo "========================="
@@ -75,6 +76,7 @@ Triangle.g \
 Complexes.g \
 EdW.g \
 Auslander-Buchsbaum.g \
+Gcd_UsingCayleyDeterminant.g \
 ; do
     echo -e "\n"
     echo "========================="
@@ -100,6 +102,7 @@ Triangle.g \
 Complexes.g \
 Auslander-Buchsbaum.g \
 Eliminate.g \
+Gcd_UsingCayleyDeterminant.g \
 ; do
     echo -e "\n"
     echo "========================="
@@ -125,6 +128,7 @@ Purity_OreModules.g \
 A3_Purity_OreModules.g \
 Auslander-Buchsbaum.g \
 HilbertPolynomial.g \
+Gcd_UsingCayleyDeterminant.g \
 ; do
     echo -e "\n"
     echo "========================="
