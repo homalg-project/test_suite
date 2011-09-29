@@ -29,6 +29,7 @@ cd MAGMA
 for i in \
 Curve\:g\=10_and_g\^2_6-Sextic.g \
 TwistedCubic.g \
+RationalQuartic.g \
 FilteredByPurity.g \
 ; do
     echo -e "\n"
