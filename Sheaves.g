@@ -29,6 +29,7 @@ cd MAGMA
 for i in \
 Curve\:g\=10_and_g\^2_6-Sextic.g \
 TwistedCubic.g \
+d-uple_Embedding_of_P1.g \
 RationalQuartic.g \
 FilteredByPurity.g \
 ; do
