@@ -60,6 +60,7 @@ cd ../
 cd Macaulay2
 
 for i in \
+HilbertPolynomial.g \
 Purity.g \
 FilteredByPurity.g \
 Triangle.g \
