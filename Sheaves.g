@@ -12,7 +12,9 @@ for i in \
 Curve\:g\=?_and* Curve\:g\=10_and_g\^2_6-Sextic.g \
 TwistedCubic.g \
 d-uple_Embedding_of_P1.g \
+Pullback_d-uple_Embedding_of_P1.g \
 RationalQuartic.g \
+Pullback_RationalQuartic.g \
 Triangle.g \
 FilteredByPurity.g \
 ; do
