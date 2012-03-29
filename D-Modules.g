@@ -14,7 +14,7 @@ Localized_Reiffen.g \
     echo "========================="
     echo $i "(D-Modules)"
     echo "========================="
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 cd ../..

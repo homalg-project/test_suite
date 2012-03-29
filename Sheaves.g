@@ -22,7 +22,7 @@ FilteredByPurity.g \
     echo "========================="
     echo $i "(Sheaves)"
     echo "========================="
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 ## MAGMA
@@ -40,7 +40,7 @@ FilteredByPurity.g \
     echo MAGMA/$i "(Sheaves)"
     echo "========================="
     update_from_directory_one_level_up
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 cd ../
@@ -61,7 +61,7 @@ FilteredByPurity.g \
     echo Macaulay2/$i "(Sheaves)"
     echo "========================="
     update_from_directory_one_level_up
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 cd ../
@@ -81,7 +81,7 @@ FilteredByPurity.g \
     echo Maple/$i "(Sheaves)"
     echo "========================="
     update_from_directory_one_level_up
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 cd ../

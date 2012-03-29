@@ -16,7 +16,7 @@ A3_Purity.g \
     echo "========================="
     echo $i "(MapleForHomalg)"
     echo "========================="
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 cd ../..

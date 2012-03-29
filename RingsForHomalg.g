@@ -13,8 +13,8 @@ echo RingsForHomalg
 echo "========================="
 
 echo RingsForHomalg/examples/all.g
-gapL all.g < /dev/null
+gap all.g < /dev/null
 echo RingsForHomalg/examples/convert.g
-gapL convert.g < /dev/null
+gap convert.g < /dev/null
 
 cd ../..

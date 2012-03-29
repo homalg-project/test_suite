@@ -17,7 +17,7 @@ for i in \
     echo "========================="
     echo $i "(ExamplesForHomalg)"
     echo "========================="
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 ## FoSys_HoEq_*.g
@@ -28,7 +28,7 @@ FoSys_HoEq_*.g \
     echo "========================="
     echo $i "(ExamplesForHomalg)"
     echo "========================="
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 ## Singular
@@ -62,7 +62,7 @@ Gcd_UsingCayleyDeterminant.g \
     echo "========================="
     echo $i "(ExamplesForHomalg)"
     echo "========================="
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 ## MAGMA
@@ -83,7 +83,7 @@ Gcd_UsingCayleyDeterminant.g \
     echo MAGMA/$i "(ExamplesForHomalg)"
     echo "========================="
     update_from_directory_one_level_up
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 cd ../
@@ -109,7 +109,7 @@ Gcd_UsingCayleyDeterminant.g \
     echo Macaulay2/$i "(ExamplesForHomalg)"
     echo "========================="
     update_from_directory_one_level_up
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 cd ../
@@ -135,7 +135,7 @@ Gcd_UsingCayleyDeterminant.g \
     echo maple/$i "(ExamplesForHomalg)"
     echo "========================="
     update_from_directory_one_level_up
-    gapL $i < /dev/null
+    gap $i < /dev/null
 done
 
 cd ../
