@@ -17,6 +17,7 @@ cd $PKG_PATH
 
 gap "${BIN_PATH}/LoadSheaves.g" < /dev/null
 
+. ./MapleForHomalg/bin/LibraryPath.sh
 
 {
     echo -e "\n"
@@ -30,6 +31,9 @@ gap "${BIN_PATH}/LoadSheaves.g" < /dev/null
 } >&2
 
 gap "${BIN_PATH}/LoadAllPackages.g" < /dev/null
+
+unset DYLD_LIBRARY_PATH
+unset LD_LIBRARY_PATH
 
 L="RingsForHomalg MatricesForHomalg HomalgToCAS VirtualCAS IO_ForHomalg Gauss GaussForHomalg SCO alexander Conley SimplicialObjects Orbifolds LocalizeRingForHomalg GradedRingForHomalg k-Points AbelianSystems homalg Modules SystemTheory Sheaves D-Modules ExamplesForHomalg GradedModules"
 
