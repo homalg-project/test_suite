@@ -34,6 +34,14 @@ done
 cd MAGMA
 
 for i in \
+MainExample.g \
+ReducedBasisOfModule.g \
+; do
+    cp -u ../$i .
+    update_from_directory_one_level_up
+done
+
+for i in \
 HilbertPolynomial.g \
 Purity.g \
 FilteredByPurity.g \
@@ -58,6 +66,14 @@ cd ../
 
 ## Macaulay2
 cd Macaulay2
+
+for i in \
+MainExample.g \
+ReducedBasisOfModule.g \
+; do
+    cp -u ../$i .
+    update_from_directory_one_level_up
+done
 
 for i in \
 HilbertPolynomial.g \
@@ -85,6 +101,13 @@ cd ../
 
 ## Maple
 cd maple
+
+for i in \
+MainExample.g \
+; do
+    cp -u ../$i .
+    update_from_directory_one_level_up
+done
 
 for i in \
 HilbertPolynomial.g \

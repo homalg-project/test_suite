@@ -7,6 +7,11 @@ cd $PKG_PATH
 ## ExamplesForHomalg
 cd ExamplesForHomalg/examples/
 
+mkdir -p GAP
+mkdir -p ExternalGAP
+cp $(echo "Hom(Hom(-,Z128),Z16)_On_Seq.g") GAP/
+cp $(echo "Hom(Hom(-,Z128),Z16)_On_Seq.g") ExternalGAP/
+
 ## Hom(Hom(-,Z128),Z16)_On_Seq.g
 for i in \
 "Hom(Hom(-,Z128),Z16)_On_Seq.g" \
@@ -68,6 +73,10 @@ done
 ## MAGMA
 cd MAGMA
 
+i=ReducedBasisOfModule.g
+cp -u ../$i .
+update_from_directory_one_level_up
+
 for i in \
 Purity.g \
 TorExt.g \
@@ -92,6 +101,14 @@ cd ../
 cd Macaulay2
 
 # EdW.g:	191.906 sec.
+
+for i in \
+ReducedBasisOfModule.g \
+Coupling.g \
+; do
+    cp -u ../$i .
+    update_from_directory_one_level_up
+done
 
 for i in \
 Purity.g \
@@ -121,11 +138,21 @@ cd maple
 # ExtExt.g:	
 
 for i in \
+ReducedBasisOfModule.g \
+Coupling.g \
+; do
+    cp -u ../$i .
+    update_from_directory_one_level_up
+done
+
+# Those were part of the list below, but do not appear in any rep.
+# Purity_OreModules.g \
+# A3_Purity_OreModules.g \
+
+for i in \
 Purity.g \
 A3_Purity.g \
 Eliminate.g \
-Purity_OreModules.g \
-A3_Purity_OreModules.g \
 Auslander-Buchsbaum.g \
 HilbertPolynomial.g \
 Gcd_UsingCayleyDeterminant.g \
