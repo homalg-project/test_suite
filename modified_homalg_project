@@ -7,7 +7,6 @@ if cd $PKG_PATH; then
 	d=${p///.git}
 	cd "$d"
 	if [ "$d" = "Arrangements" ] ||
-	    [ "$d" = "LessGenerators" ] ||
 	    [ "$d" = "SCSCP_ForHomalg" ] ||
 	    [ "$d" = "Yoneda" ] ||
 	    [ "$d" = "jets" ]; then
