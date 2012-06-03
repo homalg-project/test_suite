@@ -4,132 +4,20 @@
 
 cd $PKG_PATH
 
-## GradedModules
-cd GradedModules/examples/
+L="GradedModules_Singular.g GradedModules_MAGMA.g GradedModules_maple.g GradedModules_Macaulay.g"
 
-## Singular
-for i in \
-HilbertPolynomial.g \
-Purity.g \
-FilteredByPurity.g \
-Triangle.g \
-Complexes.g \
-GlobalSections.g \
-P1.g \
-Schenck-3.2.g \
-Schenck-8.3.g \
-Schenck-8.3.3.g \
-NonCohenMacaulayMonomialIdeal.g \
-VectorBundleOnP1_Example5.1.g \
-VectorBundleOnP1_Example5.2.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo $i "(GradedModules)"
-    echo "========================="
-    gap $i < /dev/null
+for i in $L; do
+  {
+  echo -e "\n"
+  echo -e "\033[1;33;41m"
+  echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
+  echo -e "\033[0m"
+  echo $i
+  echo -e "\033[1;33;41m"
+  echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
+  echo -e "\033[0m"
+  } >&2
+  sh -c "$BIN_PATH/${i}"
 done
 
-## MAGMA
-cd MAGMA
-
-for i in \
-MainExample.g \
-ReducedBasisOfModule.g \
-; do
-    cp -u ../$i .
-    update_from_directory_one_level_up
-done
-
-for i in \
-HilbertPolynomial.g \
-Purity.g \
-FilteredByPurity.g \
-Triangle.g \
-Complexes.g \
-GlobalSections.g \
-P1.g \
-Schenck-3.2.g \
-Schenck-8.3.g \
-Schenck-8.3.3.g \
-NonCohenMacaulayMonomialIdeal.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo MAGMA/$i "(GradedModules)"
-    echo "========================="
-    update_from_directory_one_level_up
-    gap $i < /dev/null
-done
-
-cd ../
-
-## Macaulay2
-cd Macaulay2
-
-for i in \
-MainExample.g \
-ReducedBasisOfModule.g \
-; do
-    cp -u ../$i .
-    update_from_directory_one_level_up
-done
-
-for i in \
-HilbertPolynomial.g \
-Purity.g \
-FilteredByPurity.g \
-Triangle.g \
-Complexes.g \
-GlobalSections.g \
-P1.g \
-Schenck-3.2.g \
-Schenck-8.3.g \
-Schenck-8.3.3.g \
-NonCohenMacaulayMonomialIdeal.g \
-VectorBundleOnP1_Example5.1.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo Macaulay2/$i "(GradedModules)"
-    echo "========================="
-    update_from_directory_one_level_up
-    gap $i < /dev/null
-done
-
-cd ../
-
-## Maple
-cd maple
-
-for i in \
-MainExample.g \
-; do
-    cp -u ../$i .
-    update_from_directory_one_level_up
-done
-
-for i in \
-HilbertPolynomial.g \
-Purity.g \
-FilteredByPurity.g \
-P1.g \
-Schenck-3.2.g \
-Schenck-8.3.g \
-Schenck-8.3.3.g \
-NonCohenMacaulayMonomialIdeal.g \
-VectorBundleOnP1_Example5.1.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo maple/$i "(GradedModules)"
-    echo "========================="
-    update_from_directory_one_level_up
-    gap $i < /dev/null
-done
-
-cd ../
-
-## END
-
-cd ../..
+echo -e "\a\a\a"

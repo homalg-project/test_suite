@@ -4,169 +4,20 @@
 
 cd $PKG_PATH
 
-## ExamplesForHomalg
-cd ExamplesForHomalg/examples/
+L="ExamplesForHomalg_Singular.g ExamplesForHomalg_MAGMA.g ExamplesForHomalg_maple.g ExamplesForHomalg_Macaulay.g ExamplesForHomalg_GAP.g"
 
-mkdir -p GAP
-mkdir -p ExternalGAP
-cp $(echo "Hom(Hom(-,Z128),Z16)_On_Seq.g") GAP/
-cp $(echo "Hom(Hom(-,Z128),Z16)_On_Seq.g") ExternalGAP/
-
-## Hom(Hom(-,Z128),Z16)_On_Seq.g
-for i in \
-"Hom(Hom(-,Z128),Z16)_On_Seq.g" \
-"GAP/Hom(Hom(-,Z128),Z16)_On_Seq.g" \
-"ExternalGAP/Hom(Hom(-,Z128),Z16)_On_Seq.g" \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo $i "(ExamplesForHomalg)"
-    echo "========================="
-    gap $i < /dev/null
+for i in $L; do
+  {
+  echo -e "\n"
+  echo -e "\033[1;33;41m"
+  echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
+  echo -e "\033[0m"
+  echo $i
+  echo -e "\033[1;33;41m"
+  echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
+  echo -e "\033[0m"
+  } >&2
+  sh -c "$BIN_PATH/${i}"
 done
 
-## FoSys_HoEq_*.g
-for i in \
-FoSys_HoEq_*.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo $i "(ExamplesForHomalg)"
-    echo "========================="
-    gap $i < /dev/null
-done
-
-## Singular
-for i in \
-Purity.g \
-TorExt.g \
-ExtExt.g \
-A3_Purity.g \
-Triangle.g \
-Complexes.g \
-EdW.g \
-Auslander-Buchsbaum.g \
-Eliminate.g \
-BurchProjectiveDimension.g \
-CheckParametrization.g \
-DerShift.g \
-Eliminate.g \
-IdealvsSubobjectProperties.g \
-CohenMacaulayModule.g \
-CohenMacaulayRing.g \
-NonCohenMacaulayModuleNonEquidimensional.g \
-NonCohenMacaulayRingNonEquidimensional.g \
-ProjectiveOfNonconstantRank_Rank0.g \
-ReflexiveNonProjectiveIdeal.g \
-ShortenResolution.g \
-WhySpectral.g \
-HilbertPolynomial.g \
-Gcd_UsingCayleyDeterminant.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo $i "(ExamplesForHomalg)"
-    echo "========================="
-    gap $i < /dev/null
-done
-
-## MAGMA
-cd MAGMA
-
-i=ReducedBasisOfModule.g
-cp -u ../$i .
-update_from_directory_one_level_up
-
-for i in \
-Purity.g \
-TorExt.g \
-ExtExt.g \
-Triangle.g \
-Complexes.g \
-EdW.g \
-Auslander-Buchsbaum.g \
-Gcd_UsingCayleyDeterminant.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo MAGMA/$i "(ExamplesForHomalg)"
-    echo "========================="
-    update_from_directory_one_level_up
-    gap $i < /dev/null
-done
-
-cd ../
-
-## Macaulay2
-cd Macaulay2
-
-# EdW.g:	191.906 sec.
-
-for i in \
-ReducedBasisOfModule.g \
-Coupling.g \
-; do
-    cp -u ../$i .
-    update_from_directory_one_level_up
-done
-
-for i in \
-Purity.g \
-TorExt.g \
-ExtExt.g \
-A3_Purity.g \
-Triangle.g \
-Complexes.g \
-Auslander-Buchsbaum.g \
-Eliminate.g \
-Gcd_UsingCayleyDeterminant.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo Macaulay2/$i "(ExamplesForHomalg)"
-    echo "========================="
-    update_from_directory_one_level_up
-    gap $i < /dev/null
-done
-
-cd ../
-
-## Maple
-cd maple
-
-# TorExt.g:	2572.239 sec.
-# ExtExt.g:	
-
-for i in \
-ReducedBasisOfModule.g \
-Coupling.g \
-; do
-    cp -u ../$i .
-    update_from_directory_one_level_up
-done
-
-# Those were part of the list below, but do not appear in any rep.
-# Purity_OreModules.g \
-# A3_Purity_OreModules.g \
-
-for i in \
-Purity.g \
-A3_Purity.g \
-Eliminate.g \
-Auslander-Buchsbaum.g \
-HilbertPolynomial.g \
-Gcd_UsingCayleyDeterminant.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo maple/$i "(ExamplesForHomalg)"
-    echo "========================="
-    update_from_directory_one_level_up
-    gap $i < /dev/null
-done
-
-cd ../
-
-## END
-
-cd ../..
+echo -e "\a\a\a"

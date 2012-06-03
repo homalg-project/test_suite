@@ -4,116 +4,20 @@
 
 cd $PKG_PATH
 
-## Sheaves
-cd Sheaves/examples/
+L="Sheaves_Singular.g Sheaves_MAGMA.g Sheaves_maple.g Sheaves_Macaulay.g"
 
-## Singular
-for i in \
-Curve\:g\=?_and* Curve\:g\=10_and_g\^2_6-Sextic.g \
-TwistedCubic.g \
-d-uple_Embedding_of_P1.g \
-Pullback_d-uple_Embedding_of_P1.g \
-RationalQuartic.g \
-Pullback_RationalQuartic.g \
-Triangle.g \
-FilteredByPurity.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo $i "(Sheaves)"
-    echo "========================="
-    gap $i < /dev/null
+for i in $L; do
+  {
+  echo -e "\n"
+  echo -e "\033[1;33;41m"
+  echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
+  echo -e "\033[0m"
+  echo $i
+  echo -e "\033[1;33;41m"
+  echo "~~~~~~~~~~~~~~~~~~~~~~~~~"
+  echo -e "\033[0m"
+  } >&2
+  sh -c "$BIN_PATH/${i}"
 done
 
-## MAGMA
-cd MAGMA
-
-for i in \
-MainExample.g \
-Purity.g \
-ReducedBasisOfModule.g \
-; do
-    cp -u ../$i .
-    update_from_directory_one_level_up
-done
-
-
-for i in \
-Curve\:g\=10_and_g\^2_6-Sextic.g \
-TwistedCubic.g \
-d-uple_Embedding_of_P1.g \
-RationalQuartic.g \
-FilteredByPurity.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo MAGMA/$i "(Sheaves)"
-    echo "========================="
-    update_from_directory_one_level_up
-    gap $i < /dev/null
-done
-
-cd ../
-
-## Macaulay2
-cd Macaulay2
-
-for i in \
-MainExample.g \
-Purity.g \
-ReducedBasisOfModule.g \
-; do
-    cp -u ../$i .
-    update_from_directory_one_level_up
-done
-
-for i in \
-Curve\:g\=10_and_g\^2_6-Sextic.g \
-TwistedCubic.g \
-d-uple_Embedding_of_P1.g \
-RationalQuartic.g \
-Triangle.g \
-FilteredByPurity.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo Macaulay2/$i "(Sheaves)"
-    echo "========================="
-    update_from_directory_one_level_up
-    gap $i < /dev/null
-done
-
-cd ../
-
-## Maple
-cd maple
-
-for i in \
-MainExample.g \
-Purity.g \
-ReducedBasisOfModule.g \
-; do
-    cp -u ../$i .
-    update_from_directory_one_level_up
-done
-
-for i in \
-Curve\:g\=5_and_g\^1_3-Quintic.g \
-TwistedCubic.g \
-d-uple_Embedding_of_P1.g \
-RationalQuartic.g \
-FilteredByPurity.g \
-; do
-    echo -e "\n"
-    echo "========================="
-    echo Maple/$i "(Sheaves)"
-    echo "========================="
-    update_from_directory_one_level_up
-    gap $i < /dev/null
-done
-
-cd ../
-
-## END
-
-cd ../..
+echo -e "\a\a\a"
