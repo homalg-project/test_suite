@@ -10,11 +10,13 @@ cd Sheaves/examples/
 ## Maple
 cd maple
 
+## don't work since Sheaves:5dc2f09c
+# d-uple_Embedding_of_P1.g \
+# RationalQuartic.g \
+
 for i in \
 Curve\:g\=5_and_g\^1_3-Quintic.g \
 TwistedCubic.g \
-d-uple_Embedding_of_P1.g \
-RationalQuartic.g \
 FilteredByPurity.g \
 ; do
     echo -e "\n"
