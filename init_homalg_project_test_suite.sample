@@ -3,7 +3,7 @@ export BIN_PATH=~/software/pkg/test_suite
 
 update_from_directory_one_level_up()
 {
-    if [ "$i" -ot "../$i" -a -e "update" ]; then
+    if [ ! -e "$i" -o "$i" -ot "../$i" ] && [ -e "update" ]; then
 	cp -pvf "../$i" .
 	./update "$i"
 	rm -fv "${i}.bak"
