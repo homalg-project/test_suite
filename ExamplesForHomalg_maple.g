@@ -32,6 +32,7 @@ Eliminate.g \
 Auslander-Buchsbaum.g \
 HilbertPolynomial.g \
 Gcd_UsingCayleyDeterminant.g \
+SimplerEquivalentMatrix.g \
 ; do
     echo -e "\n"
     echo "========================="

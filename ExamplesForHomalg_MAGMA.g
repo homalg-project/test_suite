@@ -23,6 +23,7 @@ Complexes.g \
 EdW.g \
 Auslander-Buchsbaum.g \
 Gcd_UsingCayleyDeterminant.g \
+SimplerEquivalentMatrix.g \
 ; do
     echo -e "\n"
     echo "========================="

@@ -30,6 +30,7 @@ Complexes.g \
 Auslander-Buchsbaum.g \
 Eliminate.g \
 Gcd_UsingCayleyDeterminant.g \
+SimplerEquivalentMatrix.g \
 ; do
     echo -e "\n"
     echo "========================="
