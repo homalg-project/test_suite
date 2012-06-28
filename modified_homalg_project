@@ -11,7 +11,8 @@ if cd $PKG_PATH; then
 	    [ "$d" = "Yoneda" ] ||
 	    [ "$d" = "jets" ]; then
 	    true;
-	elif { git status 2>&1 | grep "modified:" >/dev/null;}; then
+	elif { git status 2>&1 | grep "modified:" >/dev/null;} ||
+	    { git status 2>&1 | grep "to be committed:" >/dev/null;}; then
 	    echo "---"
 	    echo "$d not yet committed"
 	fi
