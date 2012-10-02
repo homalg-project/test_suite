@@ -2,4 +2,4 @@
 
 . $(dirname $0)/init_homalg_project_test_suite
 
-$BIN_PATH/test_packages_of_homalg_project | grep "from paragraph"
+$BIN_PATH/test_packages_of_homalg_project | grep "########> Diff in"
