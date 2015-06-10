@@ -2,7 +2,7 @@
 
 . $(dirname $0)/init_homalg_project_test_suite
 
-cd $PKG_PATH
+cd $PKG_PATH/homalg_project
 
 L="ExamplesForHomalg_Singular.g ExamplesForHomalg_MAGMA.g ExamplesForHomalg_maple.g ExamplesForHomalg_Macaulay.g ExamplesForHomalg_GAP.g"
 

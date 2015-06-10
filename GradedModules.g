@@ -2,7 +2,7 @@
 
 . $(dirname $0)/init_homalg_project_test_suite
 
-cd $PKG_PATH
+cd $PKG_PATH/homalg_project
 
 L="GradedModules_Singular.g GradedModules_MAGMA.g GradedModules_maple.g GradedModules_Macaulay.g"
 

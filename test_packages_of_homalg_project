@@ -35,7 +35,7 @@ gap "${BIN_PATH}/LoadAllPackages.g" < /dev/null
 unset DYLD_LIBRARY_PATH
 unset LD_LIBRARY_PATH
 
-L="RingsForHomalg MatricesForHomalg HomalgToCAS VirtualCAS IO_ForHomalg Gauss GaussForHomalg SCO alexander Conley SimplicialObjects Orbifolds LocalizeRingForHomalg GradedRingForHomalg k-Points AbelianSystems homalg Modules SystemTheory Sheaves D-Modules ExamplesForHomalg GradedModules"
+L="homalg_project/RingsForHomalg homalg_project/MatricesForHomalg homalg_project/HomalgToCAS VirtualCAS homalg_project/IO_ForHomalg homalg_project/Gauss homalg_project/GaussForHomalg homalg_project/SCO alexander Conley SimplicialObjects Orbifolds homalg_project/LocalizeRingForHomalg homalg_project/GradedRingForHomalg k-Points AbelianSystems homalg_project/homalg homalg_project/Modules SystemTheory Sheaves D-Modules homalg_project/ExamplesForHomalg homalg_project/GradedModules"
 
 for i in $L; do
   {
@@ -50,7 +50,7 @@ for i in $L; do
   } >&2
   cd $i
   make test < /dev/null
-  cd ..
+  cd $PKG_PATH
 done
 
 echo -e "\n"
