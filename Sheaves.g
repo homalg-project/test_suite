@@ -4,7 +4,8 @@
 
 cd $PKG_PATH
 
-L="Sheaves_Singular.g Sheaves_MAGMA.g Sheaves_maple.g Sheaves_Macaulay.g"
+# TODO: Sheaves_maple.g Sheaves_Macaulay.g
+L="Sheaves_Singular.g Sheaves_MAGMA.g"
 
 for i in $L; do
   {

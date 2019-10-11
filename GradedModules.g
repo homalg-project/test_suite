@@ -4,7 +4,8 @@
 
 cd $PKG_PATH/homalg_project
 
-L="GradedModules_Singular.g GradedModules_MAGMA.g GradedModules_maple.g GradedModules_Macaulay.g"
+# TODO: GradedModules_MAGMA.g
+L="GradedModules_Singular.g GradedModules_maple.g GradedModules_Macaulay.g"
 
 for i in $L; do
   {

@@ -17,7 +17,8 @@ cd $PKG_PATH
 
 gap "${BIN_PATH}/LoadSheaves.g" < /dev/null
 
-. ./MapleForHomalg/bin/LibraryPath.sh
+# TODO
+#. ./MapleForHomalg/bin/LibraryPath.sh
 
 {
     echo -e "\n"
@@ -30,12 +31,14 @@ gap "${BIN_PATH}/LoadSheaves.g" < /dev/null
     echo -e "\033[0m"
 } >&2
 
-gap "${BIN_PATH}/LoadAllPackages.g" < /dev/null
+# TODO
+#gap "${BIN_PATH}/LoadAllPackages.g" < /dev/null
 
 unset DYLD_LIBRARY_PATH
 unset LD_LIBRARY_PATH
 
-L="homalg_project/RingsForHomalg homalg_project/MatricesForHomalg homalg_project/HomalgToCAS VirtualCAS homalg_project/IO_ForHomalg homalg_project/Gauss homalg_project/GaussForHomalg homalg_project/SCO alexander Conley SimplicialObjects Orbifolds homalg_project/LocalizeRingForHomalg homalg_project/GradedRingForHomalg k-Points AbelianSystems homalg_project/homalg homalg_project/Modules SystemTheory Sheaves D-Modules homalg_project/ExamplesForHomalg homalg_project/GradedModules"
+# TODO: SimplicialObjects, Orbifolds, AbelianSystems, D-Modules
+L="homalg_project/RingsForHomalg homalg_project/MatricesForHomalg homalg_project/HomalgToCAS VirtualCAS homalg_project/IO_ForHomalg homalg_project/Gauss homalg_project/GaussForHomalg homalg_project/SCO alexander Conley homalg_project/LocalizeRingForHomalg homalg_project/GradedRingForHomalg k-Points homalg_project/homalg homalg_project/Modules SystemTheory Sheaves homalg_project/ExamplesForHomalg homalg_project/GradedModules"
 
 for i in $L; do
   {
